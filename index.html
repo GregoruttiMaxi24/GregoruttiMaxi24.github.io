@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8"/>
@@ -95,6 +95,8 @@ section{padding:120px 52px;}
 .skill-name{font-size:0.95rem;color:var(--text);font-weight:400;transition:color 0.25s;}
 .skill-cat{font-family:var(--mono);font-size:0.7rem;color:var(--muted2);letter-spacing:0.06em;text-transform:uppercase;}
 .skill-row:hover .skill-name{color:var(--accent);}
+/* Badge "aprendiendo" para skills en proceso */
+.skill-learning{font-family:var(--mono);font-size:0.6rem;letter-spacing:0.07em;text-transform:uppercase;border:1px solid var(--accent-line);color:var(--accent);padding:3px 8px;border-radius:1px;margin-left:10px;vertical-align:middle;opacity:0.85;}
 
 #projects{background:var(--bg2);}
 .projects-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:56px;}
@@ -284,6 +286,9 @@ footer{background:var(--bg);border-top:1px solid var(--line);display:flex;justif
       <div class="skill-row sr d1"><span class="skill-name">CSS3</span><span class="skill-cat" data-i18n="skill.styles">Estilos</span></div>
       <div class="skill-row sr d2"><span class="skill-name">JavaScript</span><span class="skill-cat" data-i18n="skill.frontend">Frontend</span></div>
       <div class="skill-row sr d2"><span class="skill-name">TypeScript</span><span class="skill-cat" data-i18n="skill.frontend">Frontend</span></div>
+      <div class="skill-row sr d2"><span class="skill-name">Vue.js<span class="skill-learning" data-i18n="badge.learning">Aprendiendo</span></span><span class="skill-cat" data-i18n="skill.frontend">Frontend</span></div>
+      <div class="skill-row sr d3"><span class="skill-name">PHP<span class="skill-learning" data-i18n="badge.learning">Aprendiendo</span></span><span class="skill-cat" data-i18n="skill.backend">Backend</span></div>
+      <div class="skill-row sr d3"><span class="skill-name">MySQL<span class="skill-learning" data-i18n="badge.learning">Aprendiendo</span></span><span class="skill-cat" data-i18n="skill.db">Base de datos</span></div>
       <div class="skill-row sr d3"><span class="skill-name">C++</span><span class="skill-cat" data-i18n="skill.prog">Programación</span></div>
       <div class="skill-row sr d3"><span class="skill-name">SQL</span><span class="skill-cat" data-i18n="skill.db">Base de datos</span></div>
       <div class="skill-row sr d4"><span class="skill-name">Photoshop · Illustrator</span><span class="skill-cat" data-i18n="skill.design">Diseño</span></div>
@@ -456,7 +461,8 @@ const translations = {
     "about.loc":"Ubicación","about.phone":"Teléfono","about.languages":"Idiomas","about.langval":"Español · Inglés B2","about.status":"Estado","about.statusval":"Cursando Tecnicatura Web",
     "skills.label":"Tecnologías","skills.title1":"Mis","skills.title2":"habilidades",
     "skills.note":"Un conjunto de herramientas construido a través de proyectos reales, cursado técnico y exploración constante.",
-    "skill.markup":"Markup","skill.styles":"Estilos","skill.frontend":"Frontend","skill.prog":"Programación","skill.db":"Base de datos","skill.design":"Diseño","skill.tools":"Herramientas",
+    "skill.markup":"Markup","skill.styles":"Estilos","skill.frontend":"Frontend","skill.backend":"Backend","skill.prog":"Programación","skill.db":"Base de datos","skill.design":"Diseño","skill.tools":"Herramientas",
+    "badge.learning":"Aprendiendo",
     "projects.label":"Proyectos","projects.count":"06 trabajos",
     "p1.desc":"Sitio dedicado a Soda Stereo. Explora la historia de la banda, sus presentaciones más icónicas y su legado en el rock latinoamericano.",
     "p2.desc":"Plataforma de venta de ropa para chicos. Diseño orientado a la experiencia del usuario con navegación intuitiva y catálogo visual.",
@@ -487,7 +493,8 @@ const translations = {
     "about.loc":"Location","about.phone":"Phone","about.languages":"Languages","about.langval":"Spanish · English B2","about.status":"Status","about.statusval":"Enrolled in Web Tech program",
     "skills.label":"Technologies","skills.title1":"My","skills.title2":"skills",
     "skills.note":"A toolkit built through real projects, technical coursework, and constant exploration.",
-    "skill.markup":"Markup","skill.styles":"Styles","skill.frontend":"Frontend","skill.prog":"Programming","skill.db":"Database","skill.design":"Design","skill.tools":"Tools",
+    "skill.markup":"Markup","skill.styles":"Styles","skill.frontend":"Frontend","skill.backend":"Backend","skill.prog":"Programming","skill.db":"Database","skill.design":"Design","skill.tools":"Tools",
+    "badge.learning":"Learning",
     "projects.label":"Projects","projects.count":"06 works",
     "p1.desc":"A site dedicated to Soda Stereo. Explore the band's history, their most iconic performances, and their legacy in Latin American rock.",
     "p2.desc":"Kids' clothing e-commerce platform. User-experience-focused design with intuitive navigation and a visual catalog.",
